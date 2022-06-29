@@ -6,7 +6,7 @@ class GraphQLService extends AbstractService
 {
   const MAX_TRIES = 10;
 
-  public function graph(string $query, array $variables = [], $max_tries = 0)
+  public function graph(string $query, array $variables = [], $max_tries = null)
   {
     $max_tries = $max_tries ?? self::MAX_TRIES;
     // Build the request
